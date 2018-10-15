@@ -23,7 +23,7 @@ class HomeComponent extends React.Component {
                     <li>All needed routes components ready to use</li>
                     <li>Create as many routes you want!</li>
                 </ul>
-                <p>To see more information, examples and guides please visit: <a href="https://github.com/GuhPires">this page</a></p>
+                <p>To see more information, examples and guides please visit: <a href="https://github.com/GuhPires/super-react-router" target="_blank">this page</a></p>
                 <h2><Link to="/main">Let's start!</Link></h2>
             </div>
         )
