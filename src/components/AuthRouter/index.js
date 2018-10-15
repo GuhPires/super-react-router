@@ -17,17 +17,17 @@ class AuthRouter extends React.Component {
     render(){
         console.log('AuthRouter: ', this.props);
         return(
-            // <MyContext.Consumer>
-            //     {(context) => (
+            <MyContext.Consumer>
+                {(context) => (
                     <Route 
                         path={this.props.path}
-                        render={routeProps => false ? <this.props.component {...routeProps} componentProps={this.props.componentProps}/> : <Redirect to={{
+                        render={routeProps => context.state.isLogged ? <this.props.component {...routeProps} componentProps={this.props.componentProps}/> : <Redirect to={{
                                 pathname: this.props.redirect
                             }} />
                         }
                     />
-            //     )}
-            // </MyContext.Consumer>
+                )}
+            </MyContext.Consumer>
         )
     }
 }

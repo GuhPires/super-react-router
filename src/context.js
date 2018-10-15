@@ -6,20 +6,17 @@ class MyProvider extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLogged: false,
-            times: 0
+            isLogged: false
         }
         this.contextValues = {
-            state: this.state,
             login: () => this.setState({ isLogged: true }),
             logout: () => this.setState({ isLogged: false }),
-            clicked: () => this.setState({ times: this.state.times + 1 }, () => console.log('clicked: ', this.state.times))
         }
     }
 
     render() {
         return (
-            <MyContext.Provider value={this.contextValues}>
+            <MyContext.Provider value={{state: this.state, ...this.contextValues}}>
                 {this.props.children}
             </MyContext.Provider>
         )
