@@ -1,3 +1,13 @@
+/***************************** NOT FOUND COMPONENT *****************************/
+//                                                                             //
+//          This is the Not Found Component file. It is shown whenever the     //
+//              URL does no match with any of you declared routes              //
+//                              (Private or Public).                           //
+//                                                                             //
+//                         Feel free to edit this component.                   //
+//                                                                             //
+/*******************************************************************************/
+
 
 import React from 'react';
 

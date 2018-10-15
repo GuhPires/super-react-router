@@ -1,3 +1,11 @@
+/******************************* HOME COMPONENT ********************************/
+//                                                                             //
+//          This is the Home Component file. It is your homepage by default,   //
+//                              but you can change that.                       //
+//                                                                             //
+//                        Feel free to edit this component.                    //
+//                                                                             //
+/*******************************************************************************/
 
 import React from 'react';
 import { Link } from 'react-router-dom';
