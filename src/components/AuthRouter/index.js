@@ -15,7 +15,6 @@ import { MyContext } from "../../context";
 
 class AuthRouter extends React.Component {
     render(){
-        console.log('AuthRouter: ', this.props);
         return(
             <MyContext.Consumer>
                 {(context) => (

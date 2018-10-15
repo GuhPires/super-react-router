@@ -12,7 +12,6 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 const CustomRouter = (props) => {
-    console.log('Custom Router: ', props);
     return(
         
         <Route path={props.path} render={routeProps => <props.component {...routeProps} componentProps={props.componentProps}/>} />
