@@ -50,7 +50,7 @@ touch index.js
 
 ### Creating a Route
 
-In order to create a route to this component, you should decide if this component will be [_Public_](#private-routes) or [_Private_](#public-routes) ( see the section bellow to understand those concepts ). After deciding which route component you want to use, go to the _routes_ folder and open the desired file ( _privateRoutes.js_ for [Private Routes](#private-routes) or _publicRoutes.js_ for [Public Routes](#public-routes)). I will provide examples using both types, so don't worry.
+In order to create a route to this component, you should decide if this component will be [_Public_](#routes-folder) or [_Private_](#routes-folder) ( see the section bellow to understand those concepts ). After deciding which route component you want to use, go to the _routes_ folder and open the desired file ( _privateRoutes.js_ for [Private Routes](#routes-folder) or _publicRoutes.js_ for [Public Routes](#routes-folder)). I will provide examples using both types, so don't worry.
 
 * **_privateRoutes.js_**
 
