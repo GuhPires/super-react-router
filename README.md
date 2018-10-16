@@ -175,7 +175,7 @@ Just a Not Found ( 404 ) page, **you can edit it** too, feel free to do whatever
 
 #### Routes Folder
 
-This folder holds all the files that contains routes needed to the application, **you don't need to create files here ( and it isn't recommended to do so )**. Basically it has 2 files that are plain JavaScript, _privateRoutes.js_ and _publicRoutes.js_. They are responsible of all routes paths, static props and components that you want to render.
+This folder holds all the files that contains routes needed to the application, **you don't need to create files here ( and it isn't recommended to do so )**. Basically it has 2 files that are plain JavaScript: _privateRoutes.js_ and _publicRoutes.js_. They are responsible of all routes paths, static props and components that you want to render.
 
 * **Private Routes**
 
