@@ -50,7 +50,7 @@ touch index.js
 
 ### Creating a Route
 
-In order to create a route to this component, you should decide if this component will be [_Public_](#Private%20Routes) or [_Private_](#Public%20Routes) ( see the section bellow to understand those concepts ). After deciding which route component you want to use, go to the _routes_ folder and open the desired file ( _privateRoutes.js_ for [Private Routes](#Private%20Routes) or _publicRoutes.js_ for [Public Routes](#Public%20Routes)). I will provide examples using both types, so don't worry.
+In order to create a route to this component, you should decide if this component will be [_Public_](#private-routes) or [_Private_](#public-routes) ( see the section bellow to understand those concepts ). After deciding which route component you want to use, go to the _routes_ folder and open the desired file ( _privateRoutes.js_ for [Private Routes](#private-routes) or _publicRoutes.js_ for [Public Routes](#public-routes)). I will provide examples using both types, so don't worry.
 
 * **_privateRoutes.js_**
 
@@ -81,7 +81,7 @@ I want to render the _YourComponent_ when the URL match _'/mycomponent'_, but th
 
 ```
 
-_To see a more in depth explanation about the syntax, please visit [this section](#Routes%20Folder)_
+_To see a more in depth explanation about the syntax, please visit [this section](#routes-folder)_
 
 **Important:** Don't forget to `import YourComponent from '../components/YourComponent'` ( or from other path ), otherwise it will throw an error.
 
@@ -137,7 +137,7 @@ This folder will hold all the project Components (oh really?! :open_mouth:), you
 
 * **AuthRouter**
 
-This is the Route with Authentication Component, **You cannot delete it** since it is crutial for the routes that needs authentication. It is a really staright forward component that makes use of React Router, if the provided condition is true, it will proceed to the desired route, othewise it will be redirected to some provided path. One example usage for this component is any page that needs login or other kind of permission for accessing the provided route.
+This is the Route with Authentication Component, **You cannot delete it** ( and just **edit the condition part** ) since it is crutial for the routes that needs authentication. It is a really staright forward component that makes use of React Router, if the provided condition is true, it will proceed to the desired route, othewise it will be redirected to some provided path. One example usage for this component is any page that needs login or other kind of permission for accessing the provided route.
 
 ```javascript
 
