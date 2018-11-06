@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 class HomeComponent extends React.Component {
     render(){
         return (
-            <div>
+            <div style={Styles.container}>
                 <h1>Super React Router</h1>
                 <p>Basic application boilerplate for React with React Router</p>
                 <h2>See what you can do with this application: </h2>
@@ -27,6 +27,18 @@ class HomeComponent extends React.Component {
                 <h2><Link to="/main">Let's start!</Link></h2>
             </div>
         )
+    }
+}
+
+const Styles = {
+    container: {
+        width: '60%',
+        margin: '5% auto',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        border: '1px solid black'
     }
 }
 

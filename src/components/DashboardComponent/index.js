@@ -9,7 +9,7 @@ class DashboardComponent extends React.Component {
         return (
             <MyContext.Consumer>
                 {(context) => (
-                    <div>
+                    <div style={Styles.container}>
                         <h1>Your Dashboard</h1>
                         <p>Congratulations, you're logged in!</p>
                         <Link to="/main">Main Page</Link>
@@ -19,6 +19,18 @@ class DashboardComponent extends React.Component {
             </MyContext.Consumer>
         )
     }
+}
+
+const Styles = {
+    container: {
+        width: '60%',
+        margin: '5% auto',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        border: '1px solid black'
+    },
 }
 
 export default DashboardComponent;

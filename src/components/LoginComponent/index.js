@@ -9,7 +9,7 @@ const LoginComponent = (props) => {
         return (
             <MyContext.Consumer>
                 {(context) => (   
-                    <div>
+                    <div style={Styles.container}>
                         {!context.state.isLogged ? <React.Fragment>
                                 <h1>Login Page</h1>
                                 <p>You must login to proceed!</p>
@@ -22,5 +22,17 @@ const LoginComponent = (props) => {
         )
     }
 // }
+
+const Styles = {
+    container: {
+        width: '60%',
+        margin: '5% auto',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        border: '1px solid black'
+    }
+}
 
 export default LoginComponent;
