@@ -7,7 +7,7 @@ Super React Router is simply a **clean, organized and modular** boilerplate for 
 To start, you must:
 
 1. Clone or download this repository
-2. Enter into the project folder by the command `cd super-ract-router`
+2. Enter into the project folder by the command `cd super-react-router`
 3. Inside the project folder, simply type the command `npm install` ( you must have Node.js installed into your machine ) to install all dependecies of the project
     - It will take a while to install everything, so have a break :stuck_out_tongue_winking_eye:
 4. After installing it, type the `npm start` command to run the server
@@ -18,7 +18,7 @@ I will walk you trough the proccess to make it crystal clear. Make sure that you
 
 ### Creating a new Component
 
-It is really simple to create an component, simply go into the _components_ folder and create a new folder with your component name, then create an _index.js_ file inside of it with the code bellow: 
+It is really simple to create a component, simply go into the _components_ folder and create a new folder with your component name, then create an _index.js_ file inside of it with the code bellow: 
 
 ```javascript
 
@@ -54,7 +54,7 @@ In order to create a route to this component, you should decide if this componen
 
 * **_privateRoutes.js_**
 
-I want to render the _YourComponent_ when the URL match _'/mycomponent'_, but the user must be authenticated in to access it.
+I want to render the _YourComponent_ when the URL match _'/mycomponent'_, but the user must be authenticated in order to access it.
 
 ```javascript
 
@@ -69,7 +69,7 @@ I want to render the _YourComponent_ when the URL match _'/mycomponent'_, but th
 
 * **_publicRoutes.js_**
 
-I want to render the _YourComponent_ when the URL match _'/mycomponent'_, but the user doesn't need to be authenticated in to access it.
+I want to render the _YourComponent_ when the URL match _'/mycomponent'_, but the user doesn't need to be authenticated in order to access it.
 
 ```javascript
 
