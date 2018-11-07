@@ -26,6 +26,8 @@ import CustomRouter from './components/CustomRouter';
 import HomeComponent from './components/HomeComponent';
 import NotFound from './components/NotFound';
 
+import './App.css';
+
 
 class App extends React.Component {
     render(){
