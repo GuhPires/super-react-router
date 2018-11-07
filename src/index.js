@@ -34,14 +34,12 @@ class App extends React.Component {
         return(
             <MyProvider> 
                 <Router>
-                    <React.Fragment>
-                        <Switch>
-                            {PrivateRoutes.map((route, i) => <AuthRouter key={i} {...route} />)}
-                            {PublicRoutes.map((route, i) => <CustomRouter key={i} {...route} />)}
-                            <Route exact path="/" component={HomeComponent} />
-                            <Route component={NotFound} />
-                        </Switch>
-                    </React.Fragment>
+                    <Switch>
+                        {PrivateRoutes.map((route, i) => <AuthRouter key={i} {...route} />)}
+                        {PublicRoutes.map((route, i) => <CustomRouter key={i} {...route} />)}
+                        <Route exact path="/" component={HomeComponent} />
+                        <Route component={NotFound} />
+                    </Switch>
                 </Router>
             </MyProvider>
         )
